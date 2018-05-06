@@ -1,5 +1,5 @@
 # daily
-基于spring-boot，MySQL，spring-boot JPA实现的简单日报系统
+基于spring-boot，MySQL，spring-boot JPA，jQuery EasyUI 实现的简单日报系统
 
 ### 功能
 1.目前只可实现日报的填写与查看；     

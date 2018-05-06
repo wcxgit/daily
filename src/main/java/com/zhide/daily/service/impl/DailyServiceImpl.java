@@ -92,6 +92,7 @@ public class DailyServiceImpl implements DailyService {
         Sort sort = new Sort(Sort.Direction.DESC, "createTime");
         Pageable pageable = new PageRequest(page - 1, rows, sort);
 
+        // 根据条件查询
         Page<Daily> pageInfo = dailyDao.findAll(new Specification<Daily>() {
             @Nullable
             @Override
