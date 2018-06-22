@@ -66,7 +66,7 @@ public class DailyServiceImpl implements DailyService {
             daily.setMatter(jsonObject.getString("matter"));
             daily.setRemark(jsonObject.getString("remark"));
             daily.setUser(user);
-            daily.setWorkDate(new SimpleDateFormat("dd/MM/yyyy").parse(jsonObject.get("workDate").toString()));
+            daily.setWorkDate(new SimpleDateFormat("MM/dd/yyyy").parse(jsonObject.get("workDate").toString()));
             if (flag == 1) {
                 daily.setStatus(1);
             } else {
