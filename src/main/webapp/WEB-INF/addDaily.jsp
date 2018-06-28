@@ -19,35 +19,35 @@
         <thead>
         <tr>
             <th data-options="field:'ck',checkbox:true"></th>
-            <th width="10%" data-options="field:'matter',align:'center',editor:{
+            <th width="10%" data-options="field:'matter',align:'center',multiline:true,editor:{
 							type:'textbox',
 							options:{
 								required:true,
 								multiline:true,
-								height:50
+								height:100
 							}
 						}">事项
             </th>
-            <th width="45%" data-options="align:'center',field:'content',multiline:true,
+            <th width="45%" id="complate" data-options="align:'center',field:'content',multiline:true,
 						editor:{
 							type:'textbox',
 							options:{
 								required:true,
 								multiline:true,
-								height:50
+								height:100
 							}
 						}">完成目标详述
             </th>
             <th width="10%"
-                data-options="field:'workDate',align:'center',editor:{type:'datebox',options:{required:true,editable:false,height:50}}">
+                data-options="field:'workDate',align:'center',editor:{type:'datebox',options:{required:true,editable:false,height:100}}">
                 日报日期
             </th>
             <%--<th data-options="field:'unitcost',width:80,align:'right',editor:'textbox'">目标</th>--%>
             <th width="10%"
-                data-options="field:'complete',align:'center',editor:{type:'numberbox',options:{min:0,max:100,value:0,required:true,height:50}}">
+                data-options="field:'complete',align:'center',height:100,editor:{type:'numberbox',options:{min:0,max:100,value:0,required:true,height:100}}">
                 完成量(%)
             </th>
-            <th width="25%" data-options="field:'remark',align:'center',editor:{type:'textbox',options:{multiline:true,height:50}}">备注</th>
+            <th width="24%" data-options="field:'remark',align:'center',editor:{type:'textbox',options:{multiline:true,height:100}}">备注</th>
         </tr>
         </thead>
     </table>
@@ -64,6 +64,7 @@
     </div>
 </div>
 <script type="text/javascript">
+
     var editIndex = undefined;
 
     function endEditing() {
